@@ -5,6 +5,11 @@ on:
     branches:
       - master
 jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish on NPM
+        run: npm publish
   update_release_draft:
     permissions:
       contents: write

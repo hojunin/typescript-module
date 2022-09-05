@@ -1,8 +1,8 @@
 {
   "name": "hj-type-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "타입 및 타입가드 모듈",
-  "main": "index.js",
+  "main": "lib/index.ts",
   "scripts": {
     "build": "tsc"
   },
