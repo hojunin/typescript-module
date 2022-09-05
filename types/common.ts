@@ -1,35 +1,33 @@
-export type ID = number;
+type ID = number;
 
-export interface IMAGE {}
+type YES_OR_NO = 'Y' | 'N';
 
-export type YES_OR_NO = 'Y' | 'N';
+type DATE = string;
 
-export type DATE = string;
+type URL = string;
 
-export type URL = string;
+type MAYBE<T> = T | undefined;
 
-export type MAYBE<T> = T | undefined;
+type NULLABLE<T> = T | null;
 
-export type NULLABLE<T> = T | null;
+type ValueOf<T> = T[keyof T];
 
-export type ValueOf<T> = T[keyof T];
-
-export type USER_BRAND = {
+type USER_BRAND = {
     image: URL;
     brand?: string;
 };
 
-export interface LINK {
+interface LINK {
     link: string;
     title: string;
 }
 
-export interface FORUM_INFO {
+interface FORUM_INFO {
     id: ID;
     title: string;
 }
 
-export interface USER_DETAIL {
+interface USER_DETAIL {
     nickname: string;
     id_user: ID;
     name: string;
@@ -38,9 +36,9 @@ export interface USER_DETAIL {
     auth: string;
 }
 
-export type EVENT_ACTION = 'braze' | 'airBridge';
+type EVENT_ACTION = 'braze' | 'airBridge';
 
-export type EVENT = {
+type EVENT = {
     action: EVENT_ACTION;
     payload: {
         eventName: string;
@@ -88,4 +86,6 @@ type ICON_NAME =
     | 'score_fill'
     | 'score_half';
 
-export type ICON = `${ICON_CATEGORY}-${ICON_SIZE}-${ICON_NAME}`;
+type ICON = `${ICON_CATEGORY}-${ICON_SIZE}-${ICON_NAME}`;
+
+export type { ID, DATE, YES_OR_NO, ICON, URL, NULLABLE, ValueOf, MAYBE, USER_BRAND, USER_DETAIL, EVENT };
