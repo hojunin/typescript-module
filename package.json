@@ -1,6 +1,6 @@
 {
     "name": "hj-type-module",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "타입 및 타입가드 모듈",
     "scripts": {
         "build": "tsc"

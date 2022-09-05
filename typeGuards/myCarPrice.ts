@@ -1,4 +1,5 @@
 import { CAR_PRICE, FetchDataForm } from '../types/myCarPrice';
+import { isEmpty } from '../utils/nullcheck';
 
 const isMyCarPrice = (carPrice: unknown): carPrice is CAR_PRICE => {
     if (isEmpty(carPrice)) return false;
