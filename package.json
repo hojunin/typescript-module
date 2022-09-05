@@ -1,0 +1,14 @@
+{
+  "name": "type-module",
+  "version": "1.0.0",
+  "description": "타입 및 타입가드 모듈",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "hojunin",
+  "license": "MIT"
+}
